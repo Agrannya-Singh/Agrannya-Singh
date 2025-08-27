@@ -1,5 +1,5 @@
 # 💫 About Me:
-Computer Science student at VIT Vellore . Skilled in SQL, JavaScript, React, Next.js, Python, C/C++. Certified in Gen AI, ML, AI Ethics, Agile and RAG implementations. Currenrtly learning ML and DevOps
+Computer Science student at VIT Vellore . Skilled in SQL, JavaScript, React, Next.js, Python, C/C++ and AutoML solutions. Certified in Gen AI, ML, AI Ethics, Agile,Data Science and RAG implementations. Currenrtly learning ML and DevOps
 
 
 ## 🌐 Socials:
@@ -23,4 +23,3 @@ Computer Science student at VIT Vellore . Skilled in SQL, JavaScript, React, Nex
 ---
 [![](https://visitcount.itsvg.in/api?id=Agrannya-Singh&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
