@@ -1,5 +1,5 @@
 # 💫 About Me:
-Computer Science student at VIT Vellore . Skilled in SQL, JavaScript, React, Next.js, Python, C/C++ and AutoML solutions. Certified in Gen AI, ML, AI Ethics, Agile,Data Science and RAG implementations. Currenrtly learning ML and DevOps
+I am a passionate and driven Computer Science and Engineering student at Vellore Institute of Technology (VIT) with a strong foundation in full-stack development and a keen interest in Artificial Intelligence and Machine Learning. I thrive on building innovative solutions to complex problems and have hands-on experience developing scalable applications from the ground up. My projects showcase my ability to integrate sophisticated backend systems with intuitive user interfaces and leverage AI to create intelligent, user-centric experiences. I am always eager to learn new technologies and collaborate on exciting projects.
 
 
 ## 🌐 Socials:
