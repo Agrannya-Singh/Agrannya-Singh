@@ -1,0 +1,174 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=0.2in, right=0.2in, top=0.15in, bottom=0.15in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+% Define colors
+\definecolor{linkcolor}{RGB}{0,80,150}
+\definecolor{sectioncolor}{RGB}{0,0,0}
+\definecolor{iconblue}{RGB}{0, 119, 181}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    filecolor=magenta,      
+    urlcolor=linkcolor,
+}
+
+% Remove page numbering
+\pagenumbering{gobble}
+
+% Section formatting with horizontal rule
+\titleformat{\section}
+  {\color{sectioncolor}\scshape\large\bfseries}
+  {}
+  {0em}
+  {}[\titlerule]
+\titlespacing*{\section}{0pt}{0.5ex}{0.3ex}
+
+% Tighten itemize spacing for general sections
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt, parsep=0pt, partopsep=0pt}
+% Use standard bullets for nested lists (e.g., in Projects)
+\setlist[itemize,2]{label=\textbullet}
+
+\begin{document}
+
+%------------------------------------------------
+%   HEADER
+%------------------------------------------------
+\begin{center}
+    {\huge \textbf{Agrannya Singh}} \\[0.5ex]
+    \faPhoneSquare \href{tel:+919508901080}{+91 9508901080} \qquad
+    \faEnvelopeSquare \href{mailto:singh.agrannya@gmail.com}{\hspace{0.1cm}singh.agrannya@gmail.com} \qquad
+    \textcolor{black}{\faLinkedin} \href{https://linkedin.com/in/agrannya}{agrannya} \qquad
+    \textcolor{black}{\faGithubSquare} \href{https://github.com/Agrannya-Singh}{Agrannya-Singh}
+\end{center}
+
+%------------------------------------------------
+%   EDUCATION
+%------------------------------------------------
+\section*{Education}
+\begin{itemize}
+    \item \textbf{Vellore Institute of Technology} \hfill \textit{Vellore, Tamil Nadu} \\
+          B.Tech in Computer Science and Engineering, CGPA 9.04/10 \hfill \textit{Aug 2023 - Jun 2027 (expected)}
+    \item \textbf{Shivam Convent, Patna} \hfill \textit{Patna, Bihar} \\
+          High School (Class XII), CBSE, 94\% \hfill \textit{Completed Apr 2023}
+    \item \textbf{Delhi Public School, Patna} \hfill \textit{Patna, Bihar} \\
+          Secondary School (Class X), CBSE, 97\% \hfill \textit{Completed Apr 2021}
+\end{itemize}
+
+%------------------------------------------------
+%   EXPERIENCE
+%------------------------------------------------
+\section*{Experience}
+\begin{itemize}
+    \item \textbf{Mokshapay} \hfill \textit{Remote} \\
+          \textit{Founding Intern - Full Stack Developer} \hfill \textit{Sep 2025 - Present}
+        \begin{itemize}
+            \item \textbf{Frontend Architecture:} Developed a PWA-ready fintech platform using \textbf{Next.js 15} and Tailwind CSS, implementing custom typography and responsive grid layouts for a seamless user experience.
+            \item \textbf{Cloud Infrastructure (GCP):} Configured production infrastructure using \textbf{Terraform}, establishing a VPC with Cloud NAT and reserved static IPs to ensure \textbf{100\% compliance} for third-party KYC/TSP vendors.
+            \item \textbf{Database Design:} Architected a comprehensive \textbf{PostgreSQL} schema (OLTP) for Loan Management (LMS) and Payment modules, while implementing robust \textbf{Firestore Security Rules} for user data protection.
+            \item \textbf{AI Integration:} Deployed a GenAI-powered helpdesk using the \textbf{Gemini API}, automating customer support queries and reducing manual ticket volume.
+        \end{itemize}
+
+    \item \textbf{Labmentex} \hfill \textit{Remote} \\
+          \textit{Python Intern} \hfill \textit{Aug 2025 - Sep 2025}
+        \begin{itemize}
+            \item Engineered a custom \textbf{Exploratory Data Analysis (EDA) engine} using \textbf{Python} and \textbf{Flask} to process NASA DONKI datasets (CME, FLR, GST), implementing automatic type inference for complex heliographic coordinates.
+            \item Developed a feature selection algorithm utilizing \textbf{Pearson Correlation} matrices to identify and filter highly correlated (redundant) features, effectively reducing dataset noise for downstream analysis.
+            \item Optimized data processing pipelines by implementing regex-based pattern matching to exclude non-predictive identifiers, ensuring high-quality data input for statistical modeling, and leveraged \textbf{Matplotlib} to generate visualizations such as \textbf{heatmaps, correlation charts, and frequency charts}.
+        \end{itemize}
+\end{itemize}
+
+%------------------------------------------------
+%   PROJECTS
+%------------------------------------------------
+\section*{Projects}
+\begin{itemize}
+    \item \textbf{AI-Powered Space Weather Intelligence Dashboard} 
+          \textcolor{iconblue}{\faExternalLinkAlt} \href{https://space-weather-insights.vercel.app/}{\underline{Livelink}} \quad 
+          \textcolor{iconblue}{\faGithubSquare} \href{https://github.com/Agrannya-Singh/Space-Weather-Insights}{\underline{GitHub}} \hfill \textit{Jul 2024 - Present} \\
+          \textit{Next.js, TypeScript, Genkit, Docker}
+        \begin{itemize}
+            \item Constructed a full-stack dashboard to visualize NASA space weather datasets with over 50,000 records in real-time.
+            \item Created a custom EDA engine in TypeScript that automates the generation of 5+ chart types, reducing manual analysis time by an estimated 80\%.
+            \item Leveraged Google's Gemini AI via Genkit to generate contextual, EDA-aware summaries, making complex scientific data accessible to a broader audience.
+        \end{itemize}
+
+    \item \textbf{TuneTrace - Music Discovery App} 
+          \textcolor{iconblue}{\faExternalLinkAlt} \href{https://tune-trace-rubp.vercel.app}{\underline{Livelink}} \quad 
+          \textcolor{iconblue}{\faGithubSquare} \href{https://github.com/Agrannya-Singh/TuneTrace}{\underline{GitHub}} \hfill \textit{May 2025 - Present} \\
+          \textit{Next.js, FastAPI, PostgreSQL, Redis, Azure Web Services}
+        \begin{itemize}
+            \item Engineered a hybrid recommendation engine utilizing \textbf{TF-IDF vectorization} and cosine similarity, combining collaborative filtering (≥2 song overlaps) with a content-based fallback via the \textbf{YouTube Data API v3}.
+            \item Implemented a dual-layer caching strategy (\textbf{512-entry In-memory LRU} + \textbf{Redis}) with asynchronous background updates, reducing external API calls and achieving \textbf{sub-200ms database latency}.
+            \item Optimized system performance to deliver \textbf{40\% faster} overall response times, architecting a \textbf{FastAPI} gateway with robust input sanitization and rate limits (Max 50 songs/request) to prevent DoS attacks.
+            \item Migrated backend microservices to \textbf{Azure Web Services} for scalability, ensuring reliable recommendation delivery while managing distinct user sessions via secure OAuth2 identification.
+        \end{itemize}
+    
+    \item \textbf{Othello Dojo} 
+          \textcolor{iconblue}{\faExternalLinkAlt} \href{https://othello-dojo.vercel.app/}{\underline{Livelink}} \quad 
+          \textcolor{iconblue}{\faGithubSquare} \href{https://github.com/Agrannya-Singh/Othello-Dojo}{\underline{GitHub}} \quad
+          \textcolor{iconblue}{\faKaggle} \href{https://www.kaggle.com/code/agrannyasingh/othello-v3/notebook}{\underline{Kaggle}}
+          \hfill \textit{Jul 2025 - Present} \\
+          \textit{Next.js, Node.js, Tailwind CSS, Python, MongoDB, Flask, TensorFlow}
+        \begin{itemize}
+            \item Led a team of 5 to develop an autonomous Reversi agent, combining traditional Minimax algorithms with modern deep learning techniques for competitive gameplay.
+            \item Engineered a custom \href{https://www.kaggle.com/code/agrannyasingh/othello-v3/notebook}{\underline{Monte Carlo Tree Search (MCTS) pipeline}} to generate 10,000+ synthetic training states, training a ResNet-based policy-value network (OthelloNetV3) that achieved a 70\% win rate against traditional Minimax engines.
+            \item Implemented the core Othello game logic with complete rule validation, move generation, piece-flipping mechanics, and scoring systems.
+        \end{itemize}
+        \end{itemize}
+
+    \item \textbf{ScreenScout - Movie Recommendation Engine} 
+          \textcolor{iconblue}{\faExternalLinkAlt} \href{https://huggingface.co/spaces/Agrannya/CinemaAI}{\underline{Hugging Face}} \quad 
+          \textcolor{iconblue}{\faGithubSquare} \href{https://github.com/Agrannya-Singh/CinemaAI_frontend}{\underline{GitHub}} \hfill \textit{Jun 2025 - Present} \\
+          \textit{Next.js, TypeScript, FastAPI, scikit-learn, Supabase}
+        \begin{itemize}
+            \item Developed a full-stack AI movie recommendation system using Next.js and FastAPI, leveraging scikit-learn to deliver personalized suggestions for over 15,000 movies.
+            \item Architected a RESTful API with FastAPI, implementing search and recommendation endpoints with CORS-optimized routing, achieving sub-second response times.
+            \item Integrated the \textbf{OMDb API} for real-time movie data collection, with robust error handling and data validation for seamless external API interactions.
+        \end{itemize}
+\end{itemize}
+
+%------------------------------------------------
+%   TECHNICAL SKILLS
+%------------------------------------------------
+\section*{Technical Skills}
+\begin{itemize}
+    \item \textbf{Languages:} TypeScript, Python, C++, JavaScript, HTML/CSS, SQL
+    \item \textbf{Frameworks/Libraries:} Next.js, React, Node.js, FastAPI, Flask, SQLAlchemy, \textbf{Firebase Auth}
+    \item \textbf{AI/ML:} scikit-learn, Pandas, NumPy, Matplotlib, TensorFlow, Transformers
+    \item \textbf{Cloud \& DevOps:} Docker, AWS (EC2, Amplify, S3, IAM), GCP (Cloud Build, Artifact Registry, Cloud SQL, Cloud Run, Cloud Functions), \textbf{Azure Web Services}, \textbf{Firebase App Hosting}, Jenkins, Render
+    \item \textbf{Databases:} MongoDB Atlas, PostgreSQL, Redis, SQLite,Cloud Firestore
+\end{itemize}
+
+%------------------------------------------------
+%   CERTIFICATIONS
+%------------------------------------------------
+\section*{Certifications}
+\begin{itemize}
+    \item \href{https://www.credly.com/badges/4a76cdac-4555-438a-9cad-423e161daf97/linked_in_profile}{Artificial Intelligence Fundamentals} \hfill \textit{IBM Developers Network}
+    \item \href{https://courses.vit.skillsnetwork.site/certificates/a1992730519b41fbbe6ca9e2bdedd526}{Generative AI using IBM Watson X} \hfill \textit{IBM Developers Network}
+        \begin{itemize}[label=$\circ$, leftmargin=10pt]
+             \item \textbf{Capstone Project:} \href{https://github.com/Agrannya-Singh/Customer-Feedback-Analyzer}{\underline{Customer Feedback Analyzer}} (Score: \textbf{100\%}). Engineered a sentiment pipeline using \textbf{Logistic Regression}, Random Forest and \textbf{TF-IDF vectorization} (1000 features), achieving discriminative feature weights (0.27–0.86).
+             \item Deployed on \textbf{Hugging Face Spaces} (\href{https://huggingface.co/spaces/Agrannya/Product_review_model}{\underline{Live Demo}}) with interactive \textbf{Gradio} interface.
+        \end{itemize}
+    \item \href{https://www.credly.com/badges/e0ed84c3-cee0-4cfb-aa59-ff68a0b98858/public_url}{Cybersecurity Fundamentals} \hfill \textit{IBM SkillsBuild}
+    \item \href{https://www.credly.com/badges/85090490-b4b9-4a2c-ba2c-3838f8866a84/public_url}{LFC108: Cybersecurity Essentials} \hfill \textit{The Linux Foundation}
+    \item \href{https://www.credly.com/badges/135fc3a0-fbe6-4115-b232-e8ffe7e6b294/public_url}{Data Fundamentals} \hfill \textit{IBM SkillsBuild}
+    \item \href{https://www.credly.com/badges/4929c042-ec7d-4721-9acf-734759de85af/public_url}{Machine Learning for Data Science Projects} \hfill \textit{IBM SkillsBuild}
+    \item \href{https://www.credly.com/badges/e2544aff-14c5-481d-9a11-4b98cb544ec2/public_url}{LFS162: Introduction to DevOps and Site Reliability Engineering} \hfill \textit{The Linux Foundation}
+    \item \href{https://www.credly.com/badges/43f4b3b0-ffeb-4e62-85dd-f972c9e144fd/linked_in_profile}{LFS167: Introduction to Jenkins} \hfill \textit{The Linux Foundation}
+    \item \href{https://www.credly.com/badges/fb8bf992-f327-4d8b-9548-97cbb4f8a622/public_url}{Cloud Computing Fundamentals} \hfill \textit{IBM SkillsBuild}
+\end{itemize}
+
+\end{document}
