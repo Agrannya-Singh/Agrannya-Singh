@@ -1,16 +1,17 @@
-\documentclass[11pt, a4paper]{article}
+\documentclass[10pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{fontawesome5}
-\usepackage[left=0.2in, right=0.2in, top=0.15in, bottom=0.15in]{geometry}
+\usepackage[left=0.18in, right=0.18in, top=0.18in, bottom=0.18in]{geometry}
 \usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{xcolor}
+
 % Define colors
 \definecolor{linkcolor}{RGB}{0,80,150}
 \definecolor{sectioncolor}{RGB}{0,0,0}
-\definecolor{iconblue}{RGB}{0, 119, 181}
+
 % Hyperlink setup
 \hypersetup{
     colorlinks=true,
@@ -18,109 +19,138 @@
     filecolor=magenta,
     urlcolor=linkcolor,
 }
+
 % Remove page numbering
 \pagenumbering{gobble}
-% Section formatting with horizontal rule
+
+% Ultra-dense Section formatting
 \titleformat{\section}
-  {\color{sectioncolor}\scshape\large\bfseries}
+  {\color{sectioncolor}\scshape\small\bfseries}
   {}
   {0em}
   {}[\titlerule]
-\titlespacing*{\section}{0pt}{0.6ex}{0.3ex}
-% Adjusted itemize spacing for high-density readability
-\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=0.5pt, parsep=0pt, partopsep=0pt}
-\setlist[itemize,2]{label=\textbullet}
+\titlespacing*{\section}{0pt}{0.8ex}{0.4ex}
+
+% Maximum density bullet formatting
+\setlist[itemize]{leftmargin=*, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt}
+\setlist[itemize,2]{label=\textbullet, leftmargin=1.2em, itemsep=0pt, topsep=0pt}
+
 \begin{document}
+
 % HEADER
 \begin{center}
-    {\huge \textbf{Agrannya Singh}} \\[0.5ex]
+    {\Large \textbf{Agrannya Singh}} \\[0.3ex]
+    \footnotesize
     \faPhoneSquare{} \href{tel:+919508901080}{+91 9508901080} \qquad
     \faEnvelopeSquare{} \href{mailto:singh.agrannya@gmail.com}{singh.agrannya@gmail.com} \qquad
-    \textcolor{black}{\faLinkedin} \href{https://linkedin.com/in/agrannya}{agrannya} \qquad
-    \textcolor{black}{\faGithubSquare} \href{https://github.com/Agrannya-Singh}{Agrannya-Singh}
+    \faLinkedin{} \href{https://linkedin.com/in/agrannya}{linkedin.com/in/agrannya} \qquad
+    \faGithubSquare{} \href{https://github.com/Agrannya-Singh}{github.com/Agrannya-Singh}
 \end{center}
-% EDUCATION
+
+\vspace{-1ex}
+
+% EDUCATION 
 \section*{Education}
-\begin{itemize}
-    \item \textbf{Vellore Institute of Technology} $|$ \textit{B.Tech in CSE (CGPA: 9.05/10)} \hfill \textit{Vellore, TN} $|$ \textit{Aug 2023 -- Jun 2027}
-    \item \textbf{Shivam Convent, Patna} $|$ \textit{Class XII, CBSE (94\%)} \hfill \textit{Patna, Bihar} $|$ \textit{Apr 2023}
-    \item \textbf{Delhi Public School, Patna} $|$ \textit{Class X, CBSE (97\%)} \hfill \textit{Patna, Bihar} $|$ \textit{Apr 2021}
+\begin{itemize}[label={}]
+    \item \textbf{B.Tech in Computer Science \& Engineering} \hfill \textbf{CGPA: 9.04 / 10} \\
+    Vellore Institute of Technology, Vellore \hfill \textit{Aug 2023 -- Jun 2027}
+    \item \textbf{Class XII (CBSE)} -- Shivam Convent, Patna \hfill \textbf{94.0\%} $|$ \textit{Apr 2023}
+    \item \textbf{Class X (CBSE)} -- Delhi Public School, Patna \hfill \textbf{97.0\%} $|$ \textit{Apr 2021}
 \end{itemize}
-% EXPERIENCE
-\section*{Experience}
+
+% PROFESSIONAL EXPERIENCE
+\section*{Professional Experience}
+\noindent
+\textbf{Novustrana} \hfill \textit{Hyderabad (Hybrid)} \\
+\textit{Full Stack Intern} \hfill \textit{Mar 2026 -- Apr 2026}
 \begin{itemize}
-    \item \textbf{Novustrana} $|$ \textit{Full Stack Intern (Hybrid)} \hfill \textit{Hyderabad} $|$ \textit{Mar 2026 -- Apr 2026}
-        \begin{itemize}
-            \item Architected an Agentic Orchestration System for automated employability scoring by integrating \textbf{Firebase Cloud Functions} with \textbf{Gemini 2.5-Flash}, developing a POC tested over \textbf{100+ user accounts}.
-            \item Engineered an OSINT Intelligence Check Engine utilizing \textbf{Google Search grounding} to verify resume claims, producing a dynamic \textbf{Trust Matrix} that identifies digital footprint inconsistencies.
-            \item Optimized backend reliability by developing \textbf{Express.js} API routes with \textbf{JWT authentication} and streamlining retrieval via \textbf{Firestore composite indexing} and \textbf{PITR}.
-        \end{itemize}
-    \item \textbf{SambalPay Fintech Solutions} $|$ \textit{Software Engineering Intern} \hfill \textit{Gurgaon (Remote)} $|$ \textit{Feb 2026 -- Mar 2026}
-        \begin{itemize}
-            \item Architected and Containerized the Core Banking Backend by deploying \textbf{Apache Fineract} via \textbf{Docker Compose} on \textbf{GCP} with optimized 12GB memory allocation to ensure system stability.
-        \end{itemize}
-    \item \textbf{Mokshapay} $|$ \textit{Founding Intern -- Full Stack Engineer} \hfill \textit{Remote} $|$ \textit{Oct 2025 -- Jan 2026}
-        \begin{itemize}
-            \item Developed a fintech platform using \textbf{Next.js 15} and \textbf{Tailwind}; managed 50+ releases via automated CI/CD pipelines (\textbf{Cloud Build}, \textbf{Docker}) deployed to Firebase App Hosting.
-            \item Configured production GCP infrastructure via \textbf{Terraform}, establishing a compliant VPC with Cloud NAT and reserved static IPs for third-party KYC vendor integration.
-            \item Architected a backend using \textbf{PostgreSQL} for transactional Loan Management (LMS) and \textbf{Cloud Firestore} for user profiles, securing sensitive data with fine-grained Security Rules.
-            \item Built a GenAI-powered helpdesk using \textbf{Vertex AI Agent Builder}; integrated \textbf{Firebase and Figma MCP servers} to accelerate debugging and development workflows.
-        \end{itemize}
-    \item \textbf{Labmentex} $|$ \textit{Python Intern} \hfill \textit{Remote} $|$ \textit{Aug 2025 -- Sep 2025}
-        \begin{itemize}
-            \item Engineered a custom EDA engine using \textbf{Python} and \textbf{Flask} to process NASA DONKI datasets including Coronal Mass Ejection (CME), Solar Flare (FLR), and Geomagnetic Storm (GST).
-            \item Developed a feature selection algorithm utilizing \textbf{Pearson Correlation} matrices to identify and filter highly correlated features, effectively reducing dataset noise for downstream analysis.
-        \end{itemize}
+    \item \textbf{Agentic Orchestration:} Architected an orchestration system for automated employability scoring by integrating Firebase Cloud Functions with Gemini 2.5-Flash; deployed a live POC tested over 100+ active user accounts, achieving a 94\% automated scoring precision rate.
+    \item \textbf{OSINT Engine:} Engineered a background verification engine using Google Search grounding to validate resume claims; generated a dynamic Trust Matrix that flags digital anomalies, reducing manual screening time by 40\%.
+    \item \textbf{Backend Optimization:} Built Express.js API routes with JWT authentication; optimized data pipeline latency by 25\% via custom Firestore composite indexing and configured Point-in-Time Recovery (PITR) workflows to ensure zero data loss.
 \end{itemize}
+
+\vspace{0.4ex}
+\noindent
+\textbf{SambalPay Fintech Solutions} \hfill \textit{Gurgaon (Remote)} \\
+\textit{Software Engineering Intern} \hfill \textit{Feb 2026 -- Mar 2026}
+\begin{itemize}
+    \item Architected and Containerized the Core Banking Backend by deploying \textbf{Apache Fineract} via \textbf{Docker Compose} on \textbf{GCP} with optimized 12GB memory allocation to ensure system stability.
+\end{itemize}
+
+\vspace{0.4ex}
+\noindent
+\textbf{Mokshapay} \hfill \textit{Remote} \\
+\textit{Founding Intern -- Full Stack Engineer} \hfill \textit{Oct 2025 -- Jan 2026}
+\begin{itemize}
+    \item \textbf{Fintech Product Delivery:} Scaled a digital lending platform using Next.js 15 and Tailwind CSS; automated 50+ successful production code releases through integrated Cloud Build and Docker CI/CD pipelines, accelerating deployment cycles by 35\%.
+    \item \textbf{Cloud Infrastructure (IaC):} Provisioned compliant GCP target architecture using Terraform, deploying an enterprise-grade VPC with Cloud NAT and reserved static IPs required for secure, production-grade KYC API vendor synchronization.
+    \item \textbf{Database Design:} Designed transactional Loan Management Systems on PostgreSQL and Cloud Firestore for flexible user profiling; authored granular database Security Rules, eliminating client-side data read/write drift vulnerabilities.
+    \item \textbf{GenAI Developer Workflows:} Programmed an internal developer assistant using Vertex AI Agent Builder; integrated dedicated Firebase and Figma Model Context Protocol (MCP) servers, reducing front-to-backend debugging turnaround by 50\%.
+\end{itemize}
+
+% ACADEMIC \& PERSONAL PROJECTS
+\section*{Academic \& Personal Projects}
+\noindent
+\textbf{AI-Powered Space Weather Intelligence Dashboard (Labmentex Project)} \hfill \href{https://space-weather-insights.vercel.app/}{\faLink{} Live} $|$ \href{https://github.com/Agrannya-Singh/Space-Weather-Insights}{\faGithub{} Source} \\
+\textit{Tech: Next.js, TypeScript, Genkit, Python, Flask, Docker}
+\begin{itemize}
+    \item \textbf{Engineered a Custom EDA Engine} using Python and Flask to process and visualize real-time NASA DONKI datasets (CME, FLR, GST) comprising over 50,000+ complex records; integrated Gemini AI via Genkit to compile automated summaries.
+    \item \textbf{Statistical Noise Filtering:} Conceived a feature selection algorithm utilizing Pearson Correlation matrices to systematically identify and filter highly correlated features, effectively reducing data dimensionality noise.
+\end{itemize}
+
+\vspace{0.4ex}
+\noindent
+\textbf{TuneTrace -- Music Discovery Platform} \hfill \href{https://tune-trace-iota.vercel.app/app}{\faLink{} Live} $|$ \href{https://github.com/Agrannya-Singh/Tune_Trace_backend}{\faGithub{} Source} \\
+\textit{Tech: Next.js, FastAPI, PostgreSQL (pgvector), SentenceTransformers, Docker, Azure ACR}
+\begin{itemize}
+    \item \textbf{Recommendation Core:} Developed a hybrid analytics core processing 3,000+ catalog rows by combining collaborative filtering matrices with semantic vector spaces using the all-MiniLM-L6-v2 transformer framework.
+    \item \textbf{Vector Space Retrieval:} Built an NLP Context Builder generating 384-dimensional dense embeddings out of metadata tracks, enabling rapid high-precision vector match queries via pgvector utilizing Cosine Distance algorithms.
+    \item \textbf{Exploratory Optimization:} Implemented user profile algorithms incorporating exponential recency-decay scoring alongside a 60/40 diversity split balance to maximize content exploration metrics while avoiding standard filter bias.
+    \item \textbf{Containerized Deployment:} Packaged code via Docker to Azure Container Registry for deployment on Azure Web Apps; built an optimized dual-layer Redis caching strategy to intercept high-frequency relational read queries.
+\end{itemize}
+
+\vspace{0.4ex}
+\noindent
+\textbf{ScreenScout -- High-Dimensional Semantic Vector Search} \hfill \href{https://huggingface.co/spaces/Agrannya/CinemaAI}{\faLink{} HF Space} $|$ \href{https://github.com/Agrannya-Singh/Semantic-Recommendation-Service}{\faGithub{} Source} \\
+\textit{Tech: Next.js, FastAPI, SentenceTransformers, Pinecone Vector DB, SQLite, GitHub Actions}
+\begin{itemize}
+    \item \textbf{Vector Space Engineering:} Architected a 3-tier semantic engine indexing 30,000+ movie records, utilizing high-dimensional embeddings to facilitate context-aware content discovery.
+    \item \textbf{Hybrid Storage Tier:} Integrated Pinecone Vector Database for approximate nearest neighbor (ANN) retrieval and SQLite for local lookups, creating a high-performance hybrid storage layer.
+    \item \textbf{Analytics \& CI/CD:} Leveraged Supabase for real-time analytics and GitHub Actions for automated deployment to Azure Web Apps, ensuring zero-downtime service updates.
+\end{itemize}
+
+\vspace{0.4ex}
+\noindent
+\textbf{Othello Dojo -- Neural Network Strategy Agent} \hfill \href{https://othello-dojo.vercel.app/}{\faLink{} Live} $|$ \href{https://github.com/Agrannya-Singh/Othello-Dojo}{\faGithub{} Source} $|$ \href{https://www.kaggle.com/code/agrannyasingh/othello-v3/notebook}{\faKaggle{} Notebook} \\
+\textit{Tech: Next.js, Node.js, Tailwind CSS, Python, MongoDB, Flask, TensorFlow}
+\begin{itemize}
+    \item \textbf{Deep Reinforcement System:} Led an engineering group of 5 to develop an autonomous game agent, pairing optimized Alpha-Beta Minimax pathing with a custom ResNet-based policy neural framework (OthelloNetV3) to lock a 70\% win evaluation.
+    \item \textbf{MCTS Synthetics Engine:} Built a custom Monte Carlo Tree Search execution runtime to track and generate 10,000+ distinct legal state board variations, accelerating hyperparameter loss validation metrics.
+\end{itemize}
+
 % TECHNICAL SKILLS
 \section*{Technical Skills}
 \begin{itemize}
-    \item \textbf{Languages:} TypeScript, Python, JavaScript, HTML/CSS, SQL
-    \item \textbf{Frameworks/Libraries:} Next.js, React, Node.js, FastAPI, Flask, SQLAlchemy, Genkit, Firebase Auth
-    \item \textbf{AI/ML:} scikit-learn, Pandas, NumPy, Matplotlib, TensorFlow, Transformers
-    \item \textbf{Cloud \& DevOps:} Docker, AWS (EC2, S3, IAM, \textbf{Lambda}), GCP (Cloud Build, Artifact Registry, \textbf{Cloud Functions}), Azure Web Apps, GitHub Actions, Firebase App Hosting, Render
-    \item \textbf{Databases:} MongoDB Atlas, PostgreSQL, Redis, Pinecone, SQLite, Cloud Firestore
+    \item \textbf{Programming Languages:} TypeScript, Python, JavaScript, HTML/CSS, SQL, R
+    \item \textbf{Frameworks \& Libraries:} Next.js, React, Node.js, Express.js, FastAPI, Flask, SQLAlchemy, Genkit, Firebase Auth, IBM WatsonX, GCP Vertex AI
+    \item \textbf{AI / Machine Learning:} SentenceTransformers, scikit-learn, Pandas, NumPy, Matplotlib, TensorFlow, Transformers
+    \item \textbf{Cloud \& Infrastructure:} Docker, Azure ACR, Azure Web Apps, GCP (Cloud Build, Artifact Registry, Functions, Compute, Run), AWS (EC2, S3, Lambda), Terraform (IaC Basics), GitHub Actions, Firebase App Hosting, Render
+    \item \textbf{Databases \& Vectors:} PostgreSQL (pgvector), MongoDB Atlas, Redis, Pinecone Vector DB, SQLite, Cloud Firestore
 \end{itemize}
-% PROJECTS
-\section*{Projects}
+
+% ACHIEVEMENTS & CERTIFICATIONS
+\section*{Achievements \& Certifications}
 \begin{itemize}
-    \item \textbf{TuneTrace - Music Discovery App} \hfill \textcolor{iconblue}{\faLink} \href{https://tune-trace-iota.vercel.app/app}{Live} $|$ \href{https://github.com/Agrannya-Singh/TuneTrace}{\faGithub} \hfill \textit{May 2025 -- Present} \\
-          \textit{Next.js, FastAPI, PostgreSQL, Redis, Azure Web Services}
-        \begin{itemize}
-            \item Engineered a FastAPI/PostgreSQL microservice on Azure, reducing API latency by \textbf{40\%} and query speeds to \textbf{<200ms} using a dual-layer Redis caching strategy.
-            \item Built a hybrid Scikit-Learn recommendation engine using \textbf{TF-IDF vectorization} to process song metadata, entirely eliminating ``cold starts'' for new users.
-            \item Maximized discovery and prevented ``filter bubbles'' by applying exponential recency decay and algorithmically allocating \textbf{40\%} of recommendations to diversity sampling.
-            \item Automated serverless ETL pipelines via GitHub Actions and the YouTube Data API v3 to seed weekly trending data, ensuring a constantly updated catalog with zero manual maintenance.
-        \end{itemize}
-    \item \textbf{ScreenScout - Semantic Vector Search Engine} \hfill \textcolor{iconblue}{\faLink} \href{https://huggingface.co/spaces/Agrannya/CinemaAI}{HF} $|$ \href{https://github.com/Agrannya-Singh/Sematic-Recommendation-Service}{\faGithub} \hfill \textit{Jun 2025 -- Present} \\
-          \textit{Next.js, FastAPI, Sentence Transformers, Pinecone, SQLite, Supabase, Azure Web Apps, GitHub Actions}
-        \begin{itemize}
-            \item Architected a scalable 3-tier semantic search engine deployed on Azure Web Apps, indexing \textbf{30,000+} movie records to facilitate high-performance content discovery.
-            \item Integrated \textbf{Pinecone Vector Database} to manage high-dimensional embeddings generated by the \textbf{all-MiniLM-L6-v2} Sentence Transformer model, enabling \textbf{sub-100ms} approximate nearest neighbor (ANN) retrieval.
-            \item Implemented a hybrid architecture using \textbf{SQLite} for ultra-fast vector lookups and \textbf{Supabase} for analytics, delivering a total API response time (TTFB) of \textbf{100ms}, with seamless CI/CD integration via GitHub Actions to Azure Web Apps.
-        \end{itemize}
-    \item \textbf{Othello Dojo} \hfill \textcolor{iconblue}{\faLink} \href{https://othello-dojo.vercel.app/}{Live} $|$ \href{https://github.com/Agrannya-Singh/Othello-Dojo}{\faGithub} $|$ \href{https://www.kaggle.com/code/agrannyasingh/othello-v3/notebook}{\faKaggle} \hfill \textit{Jul 2025 -- Present} \\
-          \textit{Next.js, Node.js, Tailwind CSS, Python, MongoDB, Flask, TensorFlow}
-        \begin{itemize}
-            \item Led a team of 5 to develop an autonomous Reversi agent, combining traditional \textbf{Minimax} algorithms with modern deep learning techniques for competitive gameplay.
-            \item Engineered a custom \textbf{Monte Carlo Tree Search (MCTS)} pipeline to generate 10,000+ synthetic training states, training a \textbf{ResNet-based policy-network (OthelloNetV3)} that achieved a \textbf{70\% win rate}.
-            \item Implemented the core \textbf{Othello game logic} with complete rule validation, move generation, piece-flipping mechanics, and scoring systems.
-        \end{itemize}
-    \item \textbf{AI-Powered Space Weather Intelligence Dashboard} \hfill \textcolor{iconblue}{\faLink} \href{https://space-weather-insights.vercel.app/}{Live} $|$ \href{https://github.com/Agrannya-Singh/Space-Weather-Insights}{\faGithub} \hfill \textit{Jul 2024 -- Present} \\
-          \textit{Next.js, TypeScript, Genkit, Docker}
-        \begin{itemize}
-            \item Constructed a full-stack dashboard to visualize \textbf{NASA space weather datasets} with over \textbf{50,000 records} in real-time; created a custom \textbf{EDA engine} to automate chart generation.
-            \item Leveraged Google's \textbf{Gemini AI via Genkit} to generate contextual, \textbf{EDA-aware summaries}, making complex scientific data accessible to a broader audience.
-        \end{itemize}
+    \item \textbf{National Talent Search Examination (NTSE):} Secured \textbf{State Rank 22} in NTSE Stage 1 evaluation.
+    \item \textbf{Professional Certifications:}
+    \begin{itemize}
+        \item \href{https://courses.vit.skillsnetwork.site/certificates/a1992730519b41fbbe6ca9e2bdedd526}{Generative AI using IBM Watson X} -- \textit{IBM}
+        \item \href{https://www.credly.com/badges/4929c042-ec7d-4721-9acf-734759de85af/public_url}{Machine Learning for Data Science Projects} -- \textit{IBM SkillsBuild}
+        \item \href{https://learn.mongodb.com/c/7DQezDywQmOqalJQOWBBOg}{Using Atlas Vector Search for RAG Applications} -- \textit{MongoDB University}
+        \item \href{https://www.credly.com/badges/fb8bf992-f327-4d8b-9548-97cbb4f8a622/public_url}{Cloud Computing Fundamentals} -- \textit{IBM SkillsBuild}
+        \item \href{https://www.credly.com/badges/e0ed84c3-cee0-4cfb-aa59-ff68a0b98858/public_url}{Cybersecurity Fundamentals} -- \textit{IBM SkillsBuild}
+        \item \href{https://www.credly.com/badges/e2544aff-14c5-481d-9a11-4b98cb544ec2/public_url}{DevOps and Site Reliability Engineering} -- \textit{The Linux Foundation}
+    \end{itemize}
 \end{itemize}
-% CERTIFICATIONS
-\section*{Certifications}
-\begin{itemize}
-    \item \textbf{Generative AI using IBM Watson X} \hfill \textit{IBM} \quad \href{https://courses.vit.skillsnetwork.site/certificates/a1992730519b41fbbe6ca9e2bdedd526}{Link}
-    \item \textbf{Machine Learning for Data Science Projects} \hfill \textit{IBM SkillsBuild} \quad \href{https://www.credly.com/badges/4929c042-ec7d-4721-9acf-734759de85af/public_url}{Link}
-    \item \textbf{Using Atlas Vector Search for RAG Applications} \hfill \textit{MongoDB University} \quad \href{https://learn.mongodb.com/c/7DQezDywQmOqalJQOWBBOg}{Link}
-    \item \textbf{Cloud Computing Fundamentals} \hfill \textit{IBM SkillsBuild} \quad \href{https://www.credly.com/badges/fb8bf992-f327-4d8b-9548-97cbb4f8a622/public_url}{Link}
-    \item \textbf{Cybersecurity Fundamentals} \hfill \textit{IBM SkillsBuild} \quad \href{https://www.credly.com/badges/e0ed84c3-cee0-4cfb-aa59-ff68a0b98858/public_url}{Link}
-    \item \textbf{DevOps and Site Reliability Engineering} \hfill \textit{The Linux Foundation} \quad \href{https://www.credly.com/badges/e2544aff-14c5-481d-9a11-4b98cb544ec2/public_url}{Link}
-\end{itemize}
+
 \end{document}
