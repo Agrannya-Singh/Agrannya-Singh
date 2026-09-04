@@ -2,117 +2,223 @@
 
 # Agrannya Singh
 
-*Builder. Infrastructure minimalist. Occasional over-engineer.*
+**Building the infrastructure layer that makes everything else possible**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/agrannya/)
+<p>
+  <a href="https://www.linkedin.com/in/agrannya/">
+    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/Agrannya-Singh">
+    <img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white" alt="GitHub">
+  </a>
+</p>
+
+**Final Year CSE @ VIT Vellore** | Infrastructure Specialist | LLM Orchestration | Full-Stack Engineer
+
 </div>
 
-## Who I Am
+---
 
-FInal Year CSE undergrad at VIT Vellore. 
+## What I Do
 
-I build the parts of a system other people defer. Auth layers, infra pipelines, cloud architecture. The stuff that makes everything else possible and gets blamed when it breaks.
+I build systems that operate at the intersection of **infrastructure, AI orchestration, and scale**. 
 
-Full backends in under two weeks. Agentic AI systems. Containerized core banking infrastructure. I have a habit of shipping first and sleeping after. 
+- **Backend Infrastructure** — JWT auth, cloud pipelines, containerized systems that actually run in production
+- **Agentic AI Systems** — LLM orchestration doing real operational work (not demos), multi-model chaining, intelligent automation
+- **Rapid Execution** — Full backends in under two weeks. Multiple internships shipping production systems on founding-team pace
+- **Systems Thinking** — Auth layers, cloud architecture, DevOps pipelines. The critical infrastructure other people defer
 
-Right now I am interested in LLM orchestration that does real operational work, not demos.
+**Philosophy:** Ship fast. Sleep after. The only opinion that matters is whether it works at scale.
 
-## What I Have Built
+## Current Work
 
-**Samsung Prism** *R&D Intern (Ongoing)*
-> Researching LLM-driven sequential music retrieval that adapts to user intent states in real time. The core problem is that intent is not static: what someone wants to hear shifts mid-session and most retrieval systems have no way to track that. Building a pipeline that models those transitions and retrieves accordingly.
+### **Samsung Prism** — *R&D Intern (Ongoing)*
 
-**Novustrana** *Full Stack Intern*
-> Solo on the entire backend and cloud infrastructure. Built an agentic orchestration system for automated employability scoring by chaining Firebase Cloud Functions with Gemini 2.5-Flash and Grok 4 fast. Engineered an OSINT intelligence engine that used Google Search grounding to verify resume claims against public signal.
-> JWT auth, Express.js routes, Firestore schema and security rules, Cloud Run migration. All of it.
+**Problem:** Most music retrieval systems assume static user intent. But intent shifts mid-session—what someone wants at track 3 differs at track 12. Retrieval systems have no way to model that drift.
 
-**SambalPay Fintech Solutions** *Software Engineering Intern*
-> Containerized the core banking backend. Apache Fineract on Docker Compose, deployed to GCP. Also was part of peer-to-peer interviewws for roles of Technical PM and android intern. Participated in multiple competitor analysis and feature mapping across 10+ differnt NBFC loan partners
+**Solution:** Building an LLM-driven sequential music retrieval pipeline that:
+- Tracks user intent state transitions in real time
+- Adapts recommendations based on behavioral signals within the session
+- Moves beyond static collaborative filtering to dynamic preference modeling
 
-**Mokshapay** *Intern, Full Stack Engineer*
-> Built a fintech platform from a blank repo. Next.js 15 frontend, Terraform-provisioned GCP infrastructure, a compliant VPC, a dual-database backend (PostgreSQL for loan management, Firestore for user profiles), and a GenAI helpdesk on Vertex AI Agent Builder. Founding team pace: everyone owns everything.
+**Impact:** Real-time, contextually-aware music experiences that feel personalized to the moment.
 
-**Labmentex** *Python Intern*
-> Custom EDA engine in Python and Flask for NASA DONKI space weather datasets. Feature selection via Pearson Correlation matrices.
+---
 
-## Projects That Cost Me Sleep
+## Experience & Impact
 
-**[TuneTrace](https://github.com/Agrannya-Singh)**
-Hybrid music recommendation engine across 3,000+ songs. Collaborative filtering for behavioral signal, semantic vector search for contextual meaning, exponential recency-decay on user profiles so what you listened to in 2021 stops poisoning your recommendations. Neither approach alone was good enough so I used both and made them talk to each other.
+### **Novustrana** — *Full Stack Intern*
 
-**[ScreenScout](https://github.com/Agrannya-Singh)**
-Semantic search engine across 30,000+ movie records. High-dimensional embeddings, Pinecone for approximate nearest neighbor retrieval, SQLite for deterministic local lookups. The interesting problem was figuring out where one kind of retrieval breaks down and the other picks up. The boundary is where all the real design work lives.
+**Problem:** Manual employability assessment is slow, subjective, and doesn't leverage modern data. Need an intelligent system to score candidates across multiple dimensions.
 
-**[Othello Dojo](https://github.com/Agrannya-Singh)**
-Led a 5-person team to build an autonomous Reversi agent. Classical Minimax for search, ResNet-based policy network for move evaluation, custom MCTS pipeline to synthesize 10,000+ training states. AlphaZero-style reasoning applied to a board game everyone underestimates.
+**Solution:** Solo backend and cloud infrastructure for an agentic scoring system:
+- Orchestrated Gemini 2.5-Flash and Grok 4 chaining for parallel evaluations
+- Built OSINT intelligence engine using Google Search grounding to verify resume claims
+- Implemented JWT auth, Express.js routes, Firestore security rules, Cloud Run deployment
+- Firebase Cloud Functions as orchestration backbone
 
-**[Space Weather Intelligence Dashboard](https://github.com/Agrannya-Singh)**
-Full-stack dashboard for 50,000+ NASA space weather records with real-time visualization. Gemini AI via Genkit generates EDA-aware summaries that actually explain what the data is doing. Built because raw datasets tell you nothing if you cannot read them fast.
+**Impact:** From manual spreadsheets to automated multi-model scoring. All infrastructure handled solo.
 
-## Technical Stack
+---
 
-**Languages**
+### **SambalPay Fintech Solutions** — *Software Engineering Intern*
 
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![SQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+**Problem:** Legacy core banking backend wasn't containerized—couldn't scale, difficult to deploy.
 
-**Frameworks & Libraries**
+**Solution:** Containerized Apache Fineract backend infrastructure:
+- Docker Compose orchestration for local development
+- Deployed to GCP for production environments
+- Contributed to Technical PM and Android interview process
+- Conducted competitive analysis across 10+ NBFC loan partners
 
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+**Impact:** Fintech system ready for cloud-native operations at scale.
+
+---
+
+### **Mokshapay** — *Full Stack Engineer (Founding Team)*
+
+**Problem:** Building a fintech platform from zero. Needed complete stack—frontend, infrastructure, backend, compliance, and AI support.
+
+**Solution:** End-to-end platform built on founding-team pace (everyone owns everything):
+- **Frontend:** Next.js 15 for speed and developer experience
+- **Infrastructure:** Terraform-provisioned GCP with compliant VPC
+- **Backend:** Dual-database architecture (PostgreSQL for loans, Firestore for profiles)
+- **AI:** GenAI helpdesk powered by Vertex AI Agent Builder
+- **Deployment:** Production-ready from day one
+
+**Impact:** Shipped a complete fintech platform on startup velocity.
+
+---
+
+### **Labmentex** — *Python Intern*
+
+**Problem:** NASA DONKI space weather datasets are massive and raw—hard to extract signal.
+
+**Solution:** Custom EDA (Exploratory Data Analysis) engine:
+- Python + Flask data pipeline for space weather datasets
+- Feature selection via Pearson Correlation analysis
+- Built tools to make complex climate data interpretable
+
+**Impact:** Researchers can now quickly identify significant patterns in space weather data.
+
+## Notable Projects
+
+Projects that demanded everything—novel problems, cutting-edge techniques, and shipping something that actually works.
+
+### **[TuneTrace](https://github.com/Agrannya-Singh)** — Hybrid Music Recommendation Engine
+
+**Problem:** Recommending from 3,000+ songs requires both behavioral understanding (what you listened to) AND semantic meaning (contextual similarity). Single-approach systems fail.
+
+**Solution:** Two-layer recommendation architecture:
+- **Collaborative Filtering** for behavioral signal (people like you also listened to...)
+- **Semantic Vector Search** for contextual meaning (songs with similar vibes)
+- **Exponential Recency Decay** so 2021 listening history stops poisoning recommendations
+- Both layers communicate to each other—the ensemble beats either alone
+
+**Tech:** Vector embeddings, collaborative filtering, decay functions, real recommendation logic.
+
+---
+
+### **[ScreenScout](https://github.com/Agrannya-Singh)** — Semantic Movie Search
+
+**Problem:** Finding movies across 30,000+ records using keyword search fails. Users think in vibes/themes, not exact titles. But vector search alone has latency/cost issues.
+
+**Solution:** Hybrid retrieval system:
+- **High-dimensional embeddings** for semantic understanding
+- **Pinecone vector DB** for fast approximate nearest neighbor (ANN) lookup
+- **SQLite local deterministic lookups** for fallback and verification
+- **Boundary analysis:** Figured out where one approach breaks down and the other picks up—that's where all the real design lives
+
+**Tech:** High-dimensional embeddings, approximate nearest neighbor search, hybrid retrieval.
+
+---
+
+### **[Othello Dojo](https://github.com/Agrannya-Singh)** — Autonomous Reversi Agent
+
+**Problem:** Build an autonomous game-playing agent for Reversi (Othello). Underestimated game, incredible complexity at scale.
+
+**Solution:** AlphaZero-style approach for a board game:
+- **Classical Minimax** for game tree search
+- **ResNet-based Policy Network** for intelligent move evaluation
+- **Custom MCTS Pipeline** synthesizing 10,000+ training states
+- **Team:** Led a 5-person team to execution
+
+**Impact:** Autonomous agent that plays at near-optimal level, demonstrating MCTS + neural synthesis at scale.
+
+---
+
+### **[Space Weather Intelligence Dashboard](https://github.com/Agrannya-Singh)** — Real-Time NASA Analytics
+
+**Problem:** Raw datasets tell nothing. 50,000+ NASA space weather records exist, but humans can't read them fast.
+
+**Solution:** Full-stack dashboard with AI-powered interpretation:
+- **Real-time visualization** of 50,000+ records
+- **Genkit + Gemini AI** that generates EDA-aware summaries (actually explaining what the data is doing, not just summarizing)
+- **Interactive exploration** so users can drill into signals themselves
+
+**Impact:** Researchers can now understand complex space weather patterns in minutes instead of days.
+
+## Technical Arsenal
+
+### Languages
+![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![R](https://img.shields.io/badge/R-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+
+### Backend & LLM Orchestration
+![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express-404d59.svg?style=for-the-badge&logo=express&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+![Flask](https://img.shields.io/badge/Flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+![Django REST](https://img.shields.io/badge/Django_REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709)
+
+### Frontend & UI
+![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-![Chart.js](https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white)
-![Gunicorn](https://img.shields.io/badge/gunicorn-%298729.svg?style=for-the-badge&logo=gunicorn&logoColor=white)
-![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)
 
-**AI / ML**
+### Authentication & Security
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
 
+### AI & ML
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 
-**Cloud & DevOps**
-
-![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
+### Cloud & DevOps Infrastructure
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
-![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
-![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
-**Databases**
-
-![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+### Databases & Persistence
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34)
-![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
-![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-%23039BE5.svg?style=for-the-badge&logo=firebase&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
-## Certifications
+### Deployment & Platform
+![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
 
-Generative AI using IBM WatsonX &nbsp;
-|&nbsp; Machine Learning for Data Science Projects &nbsp;
-|&nbsp; Atlas Vector Search for RAG Applications &nbsp;
-|&nbsp; Cloud Computing Fundamentals &nbsp;
-|&nbsp; Cybersecurity Fundamentals &nbsp;
-|&nbsp; DevOps and Site Reliability Engineering
+## Recognitions
 
-## GitHub
+**Certifications**
+
+Generative AI using IBM WatsonX | Machine Learning for Data Science Projects | Atlas Vector Search for RAG Applications | Cloud Computing Fundamentals | Cybersecurity Fundamentals | DevOps and Site Reliability Engineering
+
+---
+
+## GitHub Analytics
 
 <div align="center">
 
