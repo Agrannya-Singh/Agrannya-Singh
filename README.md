@@ -13,36 +13,7 @@ FInal Year CSE undergrad at VIT Vellore.
 
 I build the parts of a system other people defer. Auth layers, infra pipelines, cloud architecture. The stuff that makes everything else possible and gets blamed when it breaks.
 
-## What I Have Built
-
-**Samsung Prism** *R&D Intern (Ongoing)*
-> Researching LLM-driven sequential music retrieval that adapts to user intent states in real time. The core problem is that intent is not static: what someone wants to hear shifts mid-session and most retrieval systems have no way to track that. Building a pipeline that models those transitions and retrieves accordingly.
-
-**Novustrana** *Full Stack Intern*
-> Solo on the entire backend and cloud infrastructure. Built an agentic orchestration system for automated employability scoring by chaining Firebase Cloud Functions with Gemini 2.5-Flash and Grok 4 fast. Engineered an OSINT intelligence engine that used Google Search grounding to verify resume claims against public signal.
-> JWT auth, Express.js routes, Firestore schema and security rules, Cloud Run migration. All of it.
-
-**SambalPay Fintech Solutions** *Software Engineering Intern*
-> Containerized the core banking backend. Apache Fineract on Docker Compose, deployed to GCP. Also was part of peer-to-peer interviewws for roles of Technical PM and android intern. Participated in multiple competitor analysis and feature mapping across 10+ differnt NBFC loan partners
-
-**Mokshapay** *Intern, Full Stack Engineer*
-> Built a fintech platform from a blank repo. Next.js 15 frontend, Terraform-provisioned GCP infrastructure, a compliant VPC, a dual-database backend (PostgreSQL for loan management, Firestore for user profiles), and a GenAI helpdesk on Vertex AI Agent Builder. Founding team pace: everyone owns everything.
-
-**Labmentex** *Python Intern*
-> Custom EDA engine in Python and Flask for NASA DONKI space weather datasets. Feature selection via Pearson Correlation matrices.
-
-## Projects That Cost Me Sleep
-
-**[TuneTrace](https://github.com/Agrannya-Singh)**
-Hybrid music recommendation engine across 3,000+ songs. Collaborative filtering for behavioral signal, semantic vector search for contextual meaning, exponential recency-decay on user profiles so what you listened to in 2021 stops poisoning your recommendations. Neither approach alone was good enough so I used both and made them talk to each other.
-
-**[ScreenScout](https://github.com/Agrannya-Singh)**
-Semantic search engine across 30,000+ movie records. High-dimensional embeddings, Pinecone for approximate nearest neighbor retrieval, SQLite for deterministic local lookups. The interesting problem was figuring out where one kind of retrieval breaks down and the other picks up. The boundary is where all the real design work lives.
-
-**[Othello Dojo](https://github.com/Agrannya-Singh)**
-Led a 5-person team to build an autonomous Reversi agent. Classical Minimax for search, ResNet-based policy network for move evaluation, custom MCTS pipeline to synthesize 10,000+ training states. AlphaZero-style reasoning applied to a board game everyone underestimates.
-
-**[Space Weather Intelligence Dashboard](https://github.com/Agrannya-Singh)**
+://github.com/Agrannya-Singh)**
 Full-stack dashboard for 50,000+ NASA space weather records with real-time visualization. Gemini AI via Genkit generates EDA-aware summaries that actually explain what the data is doing. Built because raw datasets tell you nothing if you cannot read them fast.
 
 ## Technical Stack
@@ -51,9 +22,6 @@ Full-stack dashboard for 50,000+ NASA space weather records with real-time visua
 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![SQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
 **Frameworks & Libraries**
@@ -65,10 +33,7 @@ Full-stack dashboard for 50,000+ NASA space weather records with real-time visua
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
-![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-![Chart.js](https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white)
-![Gunicorn](https://img.shields.io/badge/gunicorn-%298729.svg?style=for-the-badge&logo=gunicorn&logoColor=white)
-![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)
+
 
 **AI / ML**
 
@@ -99,20 +64,11 @@ Full-stack dashboard for 50,000+ NASA space weather records with real-time visua
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
-## Certifications
-
-Generative AI using IBM WatsonX &nbsp;
-|&nbsp; Machine Learning for Data Science Projects &nbsp;
-|&nbsp; Atlas Vector Search for RAG Applications &nbsp;
-|&nbsp; Cloud Computing Fundamentals &nbsp;
-|&nbsp; Cybersecurity Fundamentals &nbsp;
-|&nbsp; DevOps and Site Reliability Engineering
 
 ## GitHub
 
 <div align="center">
 
-![](https://github-readme-stats.vercel.app/api?username=Agrannya-Singh&theme=github_dark&hide_border=false&include_all_commits=true&count_private=false)
 
 ![](https://nirzak-streak-stats.vercel.app/?user=Agrannya-Singh&theme=github_dark&hide_border=false)
 
